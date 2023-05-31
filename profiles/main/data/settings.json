@@ -1,0 +1,178 @@
+{
+  "security.workspace.trust.untrustedFiles": "open",
+  "sync.gist": "82d37ca17526c5ff2004a215e9f0982a",
+  "highlight.regexes": {
+    // <> test
+    "(//|<!--)?(\\s<)(> )([~!@#$%^&*()_+-z:,|` ]+)": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "pink",
+          "color": "#E65586",
+          "fontWeight": "bold"
+        },
+        {
+          "color": "#E65586"
+        },
+        {
+          "color": "#55e691"
+        },
+        {
+          "color": "#55e691"
+        }
+      ]
+    },
+    // ^^ test
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *\\^\\^(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "pink",
+          "color": "#eff57d",
+          "fontWeight": "bold"
+        },
+        {
+          "color": ""
+        }
+      ]
+    },
+    // !!! test
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *\\!\\!\\!(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#ff3157",
+          "color": "#ff3157",
+          "fontWeight": "bold"
+        }
+      ]
+    },
+    // TODO: test of todo
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#FFAD7B",
+          "backgroundColor": "#FFAD7B",
+          "color": "#FFFFFF",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#FFAD7B99",
+          "color": "#FFFFFF"
+        }
+      ]
+    },
+    // FIXME: TEST
+    // FIX: TEST
+    // BUG: TEST
+    // DEBUG: TEST
+    // HACK: TEST
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#cc0000",
+          "backgroundColor": "#FF80B2",
+          "color": "#FFFFFF",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#FF80B299",
+          "color": "#FFFFFF"
+        }
+      ]
+    },
+    // INFO: TEST
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *INFO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#55E6B5",
+          "backgroundColor": "#55E6B5",
+          "color": "#000",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#55E6B599",
+          "color": "#000"
+        }
+      ]
+    },
+    // ABOUT: test
+    // EXP: test
+    // ???: test
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:ABOUT|EXP|\\?\\?\\?)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#b678ff",
+          "backgroundColor": "#b678ff",
+          "color": "#000",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#b678ff99",
+          "color": "#000"
+        }
+      ]
+    }
+  },
+  "explorer.confirmDelete": false,
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "redhat.telemetry.enabled": true,
+  "window.dialogStyle": "custom",
+  "window.titleBarStyle": "custom",
+  "window.commandCenter": true,
+  "editor.fontFamily": "'Monocraft Nerd Font'",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "gitlens.views.commitDetails.files.layout": "tree",
+  "workbench.colorCustomizations": {
+    "[Gruvbox Material Dark]": {
+      "sideBar.border": "#3c3836",
+      "panel.border": "#3c3836"
+    }
+  },
+  "zeng-color-picker.Filter.ApplyForTheseFiles": "TODO **/*.txt **/*.conf",
+  "zeng-color-picker.Preview.MatchPatterns": [
+    "#RRGGBB!",
+    "#RGB!",
+    "gray(\"W\")",
+    "0xRRGGBBAA",
+    "rgba(RRGGBBAA)",
+    "rgb(RRGGBB)"
+  ],
+  "java.imports.gradle.wrapper.checksums": [
+    {
+      "sha256": "ad73eb055ab3f16b007765d14e0145f9365f9bc27f83ca3e9d2a1c8a192c606b",
+      "allowed": true
+    }
+  ],
+  "gitlens.views.remotes.branches.layout": "list",
+  "gitlens.sortBranchesBy": "name:asc",
+  "git.autofetch": true,
+  "editor.formatOnSave": true,
+  "terminal.integrated.fontFamily": "'Monocraft Nerd Font Mono'",
+  "maven.executable.path": "/home/toph/.asdf/installs/maven/3.9.1/bin/mvn",
+  // "files.exclude": {
+  //     "**/.git": false
+  // },
+  "git.ignoreRebaseWarning": true,
+  "cSpell.userWords": ["FHIR"],
+  "[java]": {
+    "editor.defaultFormatter": "mwpb.java-prettier-formatter"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[dockercompose]": {
+    "gitlens.codeLens.scopes": ["document"]
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true
+}
